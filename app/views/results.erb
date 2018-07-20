@@ -1,0 +1,49 @@
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper light-green accent-3">
+                <a href="#" class="brand-logo">FrogHunters</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">Frogs</a></li>
+                    <li><a href="turtles.erb">Turtles</a></li>
+                    <li><a href="https://www.patreon.com/froghunters">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Here are the frogs near you!</h1>
+        
+        <ul>
+            <%=@results%>
+        </ul>
+    </body>
+     <footer class="page-footer light-green accent-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Thanks for visiting FrogHunter</h5>
+                    <p class="grey-text text-lighten-4">If you want to support FrogHunters, or follow us on social media, check the links down below.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.patreon.com/froghunters">Patreon</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/about">Credits </a></li>
+                        <li><a class="grey-text text-lighten-3" href="/bio">About us </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 FrogHunters
+            </div>
+        </div>
+    </footer>
+</html>
